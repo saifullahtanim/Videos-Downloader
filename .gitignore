@@ -1,0 +1,39 @@
+# Virtual Environment
+.venv/
+venv/
+env/
+ENV/
+
+# Python cache
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+
+# Temporary files
+*.tmp
+tmpmodgl3wl.tmp
+tmpwfxstgyt.tmp
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Downloads (temporary)
+downloads/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Environment variables
+.env
+.env.local
+
+# Distribution
+build/
+dist/
+*.egg-info/

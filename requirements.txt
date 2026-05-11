@@ -1,0 +1,8 @@
+flask
+requests
+yt-dlp
+instaloader
+gunicorn
+imageio-ffmpeg
+
+# Install with: pip install -r requirements.txt
