@@ -2,13 +2,15 @@
 
 <div align="center">
 
+A modern Flask-based social media downloader with bulk workflows, live progress tracking, quality selection, and platform-aware extraction.
+
+<br>
+
 ![Python](https://img.shields.io/badge/Python-3.11+-blue?style=for-the-badge&logo=python)
 ![Flask](https://img.shields.io/badge/Flask-Web%20Framework-black?style=for-the-badge&logo=flask)
 ![Docker](https://img.shields.io/badge/Docker-Ready-blue?style=for-the-badge&logo=docker)
 ![Render](https://img.shields.io/badge/Deploy-Render-purple?style=for-the-badge&logo=render)
 ![License](https://img.shields.io/badge/License-MIT-green?style=for-the-badge)
-
-A modern Flask-based social media downloader with bulk workflows, live progress tracking, quality selection, and platform-aware extraction.
 
 </div>
 
@@ -18,13 +20,23 @@ A modern Flask-based social media downloader with bulk workflows, live progress 
 
 <div align="center">
 
-| Home Interface | Bulk Downloader |
-|---|---|
-| ![Preview 1](image/1.png) | ![Preview 2](image/2.png) |
+## 🏠 Home Interface
+![Home Interface](image/1.png)
 
-| Multi Platform Support |
-|---|
-| ![Preview 3](image/3.png) |
+<br><br>
+
+## 📦 Bulk Downloader
+![Bulk Downloader](image/2.png)
+
+<br><br>
+
+## 📂 Downloads Manager
+![Downloads Manager](image/3.png)
+
+<br><br>
+
+## ⚡ Features Section
+![Features Section](image/4.png)
 
 </div>
 
