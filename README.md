@@ -20,23 +20,13 @@ A modern Flask-based social media downloader with bulk workflows, live progress 
 
 <div align="center">
 
-## 🏠 Home Interface
-![Home Interface](image/1.png)
+| 🏠 Home Interface | 📦 Bulk Downloader |
+|---|---|
+| ![](image/1.png) | ![](image/2.png) |
 
-<br><br>
-
-## 📦 Bulk Downloader
-![Bulk Downloader](image/2.png)
-
-<br><br>
-
-## 📂 Downloads Manager
-![Downloads Manager](image/3.png)
-
-<br><br>
-
-## ⚡ Features Section
-![Features Section](image/4.png)
+| 📂 Downloads Manager | ⚡ Features Section |
+|---|---|
+| ![](image/3.png) | ![](image/4.png) |
 
 </div>
 
