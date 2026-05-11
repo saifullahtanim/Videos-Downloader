@@ -1,77 +1,121 @@
-# Videos Downloader
+# 🚀 Videos Downloader
 
-![Preview 1](image/1.png)
-![Preview 2](image/2.png)
-![Preview 3](image/3.png)
+<div align="center">
 
-A Flask-based social media downloader with single and bulk workflows, live progress tracking, quality selection, and platform-aware extraction.
+![Python](https://img.shields.io/badge/Python-3.11+-blue?style=for-the-badge&logo=python)
+![Flask](https://img.shields.io/badge/Flask-Web%20Framework-black?style=for-the-badge&logo=flask)
+![Docker](https://img.shields.io/badge/Docker-Ready-blue?style=for-the-badge&logo=docker)
+![Render](https://img.shields.io/badge/Deploy-Render-purple?style=for-the-badge&logo=render)
+![License](https://img.shields.io/badge/License-MIT-green?style=for-the-badge)
 
-## Table of Contents
+A modern Flask-based social media downloader with bulk workflows, live progress tracking, quality selection, and platform-aware extraction.
 
-1. [Features](#features)
-2. [Tech Stack](#tech-stack)
-3. [Project Structure](#project-structure)
-4. [Prerequisites](#prerequisites)
-5. [Local Setup](#local-setup)
-6. [Run the Application](#run-the-application)
-7. [Environment Configuration](#environment-configuration)
-8. [Deploy to Render (Free Tier)](#deploy-to-render-free-tier)
-9. [Docker Deployment](#docker-deployment)
-10. [Troubleshooting](#troubleshooting)
-11. [Important Storage Note](#important-storage-note)
-12. [Git Workflow](#git-workflow)
-13. [Disclaimer](#disclaimer)
+</div>
 
-## Features
+---
 
-- Single and bulk URL download support
-- Download progress with size, speed, and ETA
-- Video quality selection (platform-dependent)
-- Thumbnail/title preview pipeline
-- Local download management endpoints
+# ✨ Preview
 
-## Tech Stack
+<div align="center">
 
-- Python (Flask)
-- `yt-dlp`
-- `instaloader`
-- `gunicorn` for production server
-- Optional: `ffmpeg` for media processing compatibility
+| Home Interface | Bulk Downloader |
+|---|---|
+| ![Preview 1](image/1.png) | ![Preview 2](image/2.png) |
 
-## Project Structure
+| Multi Platform Support |
+|---|
+| ![Preview 3](image/3.png) |
+
+</div>
+
+---
+
+# 📌 Features
+
+## 🎯 Core Features
+
+- ✅ Single URL video/audio download
+- ✅ Bulk download workflow support
+- ✅ Live progress tracking
+- ✅ Download speed & ETA monitoring
+- ✅ Multiple quality selection
+- ✅ Thumbnail & title preview
+- ✅ Platform-aware extraction system
+- ✅ Responsive modern UI
+- ✅ Docker deployment support
+- ✅ Render deployment ready
+
+---
+
+# 🌐 Supported Platforms
+
+- ▶️ YouTube
+- 🎵 TikTok
+- 📸 Instagram
+- 📘 Facebook
+- 🐦 Twitter/X
+- 🎬 Vimeo
+- 🔗 And many more via `yt-dlp`
+
+---
+
+# 🛠️ Tech Stack
+
+| Technology | Purpose |
+|---|---|
+| Python | Backend Language |
+| Flask | Web Framework |
+| yt-dlp | Media Extraction |
+| Instaloader | Instagram Support |
+| Gunicorn | Production Server |
+| Docker | Container Deployment |
+| HTML/CSS/JS | Frontend UI |
+
+---
+
+# 📂 Project Structure
 
 ```text
 Videos-Downloader/
-|- app.py
-|- requirements.txt
-|- Procfile
-|- Dockerfile
-|- templates/
-|- static/
-|- scripts/
-|- downloads/           # local runtime output (ignored in git)
-|- .gitignore
-```
+│
+├── app.py
+├── requirements.txt
+├── Procfile
+├── Dockerfile
+├── .gitignore
+│
+├── templates/
+├── static/
+├── scripts/
+├── image/
+│
+└── downloads/           # Temporary runtime downloads
 
-## Prerequisites
+# ⚙️ Prerequisites
 
-1. Python 3.10 or newer (3.11 recommended)
-2. Git
-3. Stable internet connection
-4. Optional but recommended: FFmpeg
+Before running locally, make sure you have:
 
-## Local Setup
+- Python 3.10+
+- Git
+- Stable Internet Connection
+- FFmpeg (Recommended)
 
-### 1) Clone the repository
+---
 
-```powershell
+# 💻 Local Setup
+
+## 1️⃣ Clone Repository
+
+```bash
 git clone https://github.com/saifullahtanim/Videos-Downloader.git
 cd Videos-Downloader
 ```
 
-### 2) Create and activate virtual environment
+---
 
-Windows PowerShell:
+## 2️⃣ Create Virtual Environment
+
+### Windows PowerShell
 
 ```powershell
 python -m venv .venv
@@ -79,41 +123,47 @@ Set-ExecutionPolicy -Scope Process -ExecutionPolicy RemoteSigned
 .\.venv\Scripts\Activate.ps1
 ```
 
-Linux/macOS:
+### Linux/macOS
 
 ```bash
 python3 -m venv .venv
 source .venv/bin/activate
 ```
 
-### 3) Install dependencies
+---
 
-```powershell
+## 3️⃣ Install Dependencies
+
+```bash
 pip install --upgrade pip
 pip install -r requirements.txt
 ```
 
-## Run the Application
+---
 
-```powershell
+# ▶️ Run the Application
+
+```bash
 python app.py
 ```
 
-Open in browser:
+Open your browser:
 
 ```text
 http://127.0.0.1:5000
 ```
 
-## Environment Configuration
+---
 
-The application reads the following variables:
+# 🌍 Environment Variables
 
-- `PORT` (default: `5000`)
-- `DEBUG` (default: `False`)
-- `DOWNLOAD_DIR` (for hosted environments, recommended: `/tmp/downloads`)
+| Variable | Default | Description |
+|---|---|---|
+| PORT | 5000 | Application Port |
+| DEBUG | False | Debug Mode |
+| DOWNLOAD_DIR | /tmp/downloads | Download Location |
 
-Example:
+## Example
 
 ```powershell
 $env:DEBUG="False"
@@ -121,76 +171,196 @@ $env:DOWNLOAD_DIR="/tmp/downloads"
 python app.py
 ```
 
-## Deploy to Render (Free Tier)
+---
 
-1. Sign in to Render.
-2. Create a new **Web Service**.
-3. Connect GitHub and select this repository.
-4. Use branch `main`.
-5. Set **Start Command**:
+# ☁️ Deploy to Render
+
+## Step 1 — Push to GitHub
+
+```bash
+git add .
+git commit -m "Initial deploy"
+git push origin main
+```
+
+---
+
+## Step 2 — Create Render Web Service
+
+1. Login to Render
+2. Create a new **Web Service**
+3. Connect GitHub repository
+4. Select branch `main`
+5. Deploy
+
+---
+
+## Step 3 — Start Command
 
 ```text
 gunicorn --bind 0.0.0.0:$PORT app:app
 ```
 
-6. Add environment variables:
+---
+
+## Step 4 — Environment Variables
 
 ```text
 DOWNLOAD_DIR=/tmp/downloads
 DEBUG=False
 ```
 
-7. Deploy and wait for build completion.
-8. Open the generated Render URL and test download flow.
+---
 
-## Docker Deployment
+# 🐳 Docker Deployment
 
-Build and run locally:
+## Build Docker Image
 
-```powershell
+```bash
 docker build -t videos-downloader .
+```
+
+## Run Container
+
+```bash
 docker run -e PORT=8080 -p 8080:8080 videos-downloader
 ```
 
-## Troubleshooting
+---
 
-### App does not start
+# 📈 Workflow Overview
 
-```powershell
-.\.venv\Scripts\python.exe app.py
+```text
+User URL
+   ↓
+Flask Backend
+   ↓
+yt-dlp Extraction
+   ↓
+Quality Selection
+   ↓
+Download Processing
+   ↓
+User Download
 ```
 
-### Missing package error
+---
 
-```powershell
+# 🧪 Troubleshooting
+
+## ❌ Application Not Starting
+
+```bash
+python app.py
+```
+
+---
+
+## ❌ Missing Packages
+
+```bash
 pip install -r requirements.txt
 ```
 
-### Push rejected (`fetch first`)
+---
 
-```powershell
+## ❌ Git Push Rejected
+
+```bash
 git pull origin main --allow-unrelated-histories
 git push origin main
 ```
 
-## Important Storage Note
+---
 
-On local machine, files are saved in `downloads/`.
-On most free hosts (including Render free tier), storage is ephemeral.
-Use one of the following production-safe approaches:
+# ⚠️ Important Storage Note
 
-1. Stream files directly to the user, then delete temporary files.
-2. Upload outputs to object storage (S3/Backblaze) and return signed links.
+On local environments, downloads are stored in:
 
-## Git Workflow
+```text
+downloads/
+```
 
-```powershell
+On Render Free Tier and most cloud platforms:
+
+- Storage is temporary (ephemeral)
+- Files may be removed automatically
+- Recommended production approaches:
+
+## Recommended Solutions
+
+1. Stream files directly to users
+2. Delete temporary files after download
+3. Use cloud object storage:
+   - AWS S3
+   - Backblaze B2
+   - Cloudflare R2
+
+---
+
+# 🔄 Git Workflow
+
+```bash
 git add .
 git commit -m "Update project"
 git push origin main
 ```
 
-## Disclaimer
+---
 
-You are responsible for legal and policy-compliant usage.
-Always respect platform terms of service and copyright laws.
+# 📸 Screenshots
+
+<div align="center">
+
+## 🏠 Main Interface
+
+![Main UI](image/1.png)
+
+---
+
+## 📦 Bulk Download System
+
+![Bulk UI](image/2.png)
+
+---
+
+## 🌐 Multi Platform Downloader
+
+![Platform UI](image/3.png)
+
+</div>
+
+---
+
+# 🤝 Contributing
+
+Contributions are welcome.
+
+If you'd like to improve the project:
+
+1. Fork the repository
+2. Create a new branch
+3. Make your changes
+4. Submit a Pull Request
+
+---
+
+# 📜 Disclaimer
+
+This project is intended for educational and personal use only.
+
+Users are responsible for:
+
+- Following platform Terms of Service
+- Respecting copyright laws
+- Legal and ethical usage
+
+---
+
+# ⭐ Support
+
+If you found this project useful:
+
+- ⭐ Star the repository
+- 🍴 Fork the project
+- 🛠️ Contribute improvements
