@@ -306,29 +306,7 @@ git commit -m "Update project"
 git push origin main
 ```
 
----
 
-# 📸 Screenshots
-
-<div align="center">
-
-## 🏠 Main Interface
-
-![Main UI](image/1.png)
-
----
-
-## 📦 Bulk Download System
-
-![Bulk UI](image/2.png)
-
----
-
-## 🌐 Multi Platform Downloader
-
-![Platform UI](image/3.png)
-
-</div>
 
 ---
 
